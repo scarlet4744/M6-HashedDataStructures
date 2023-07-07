@@ -8,17 +8,15 @@ public class Module6_Wianecki_Assignment1 extends BinarySearchTree {
         
         BinarySearchTree nameTree = new BinarySearchTree();
         
+        //first traversal
         String[] names = {"Daniel", "George", "Adam", "Peter", "Michael", "Jones", "Tom", "Allison", "James", "Brian" };
-        int size = names.length;
-        //System.out.println(size);
         
+        //second traversal
+        //String[] names = {"Daniel", "George", "Adam", "Michael", "Jones", "Tom", "Allison", "James"};
+        
+        int size = names.length;
         
         root = nameTree.arrayToBST(names, 0, size - 1);
-        
-        System.out.println("Binary Search Tree: ");
-        nameTree.printTree( root);
-        
-        System.out.println("\n-----------------------------------------\n");
         
         System.out.println("Preorder traversal: ");
         nameTree.preOrder(root);
